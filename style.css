@@ -170,6 +170,25 @@ nav .container {
     background: #1e40af;
 }
 
+/* Under Construction */
+.construction {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.construction p:first-child {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.construction p:last-child {
+    color: #666;
+    font-size: 1.1rem;
+}
+
 /* Contact Section */
 #contact a {
     color: #2563eb;
