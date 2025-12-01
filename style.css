@@ -119,6 +119,19 @@ nav .container {
 }
 
 /* Publications */
+.pub-section-title {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 0.5rem;
+}
+
+.pub-section-title:first-of-type {
+    margin-top: 1rem;
+}
+
 .publication {
     background: white;
     padding: 2rem;
