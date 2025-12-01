@@ -170,6 +170,14 @@ nav .container {
     background: #1e40af;
 }
 
+/* Section Introduction */
+.section-intro {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
 /* Under Construction */
 .construction {
     text-align: center;
@@ -184,9 +192,26 @@ nav .container {
     margin-bottom: 1rem;
 }
 
-.construction p:last-child {
+.construction p {
     color: #666;
     font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.notebook-topics {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+.notebook-topics li {
+    padding: 0.5rem 0;
+    color: #2563eb;
+}
+
+.notebook-topics li:before {
+    content: "📓 ";
+    margin-right: 0.5rem;
 }
 
 /* Contact Section */
