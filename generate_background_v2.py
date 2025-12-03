@@ -11,8 +11,8 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Circle
 from matplotlib.tri import Triangulation
 
-# Set dimensions for extra-wide display (3:1 aspect ratio)
-fig = plt.figure(figsize=(30, 10), dpi=200)
+# Set dimensions for very wide display (4:1 aspect ratio)
+fig = plt.figure(figsize=(48, 12), dpi=200)
 ax = plt.gca()
 
 # Create sophisticated multi-layer gradient background
@@ -36,16 +36,16 @@ radial = np.sqrt((X - center_x)**2 + (Y - center_y)**2)
 radial_factor = 1 - 0.15 * np.exp(-radial * 3)
 
 background = np.dstack([R * radial_factor, G * radial_factor, B * radial_factor])
-ax.imshow(background, extent=[0, 10, 0, 10], aspect='auto', alpha=1.0)
+ax.imshow(background, extent=[0, 40, 0, 10], aspect='auto', alpha=1.0)
 
 # Create elegant finite element mesh - structured regions
 np.random.seed(42)
 
 # Create multiple mesh regions for visual interest
 mesh_regions = [
-    (np.array([0.5, 2.5, 0.5, 2.5]), 15),  # Bottom left
-    (np.array([7, 9.5, 7, 9.5]), 12),       # Top right
-    (np.array([3, 6, 2, 5]), 18),           # Center-left
+    (np.array([1, 8, 1, 4]), 20),         # Left
+    (np.array([32, 39, 6, 9]), 18),       # Right
+    (np.array([15, 25, 3, 7]), 25),       # Center
 ]
 
 for bounds, n_pts in mesh_regions:
@@ -58,10 +58,10 @@ for bounds, n_pts in mesh_regions:
 
 # Add elegant mathematical annotations with better positioning
 equations = [
-    (r'$\nabla \cdot \mathbf{u} = 0$', (1.2, 8.8), 16),
-    (r'$\nabla^2 p = -\omega^2 c^{-2} p$', (8.2, 1.5), 14),
-    (r'$\min_{\mathbf{m}} \, J(\mathbf{m})$', (8.5, 8.5), 16),
-    (r'$\mathbf{g} = \nabla_{\mathbf{m}} J$', (1.5, 1.8), 14),
+    (r'$\nabla \cdot \mathbf{u} = 0$', (3, 8.5), 16),
+    (r'$\nabla^2 p = -\omega^2 c^{-2} p$', (33, 1.5), 14),
+    (r'$\min_{\mathbf{m}} \, J(\mathbf{m})$', (35, 8.5), 16),
+    (r'$\mathbf{g} = \nabla_{\mathbf{m}} J$', (4, 1.8), 14),
 ]
 
 for eq, (x_pos, y_pos), fsize in equations:
@@ -73,9 +73,9 @@ for eq, (x_pos, y_pos), fsize in equations:
 # Add sophisticated geometric elements
 # Large circles representing computational domains
 circles = [
-    (2.2, 7.2, 0.8, 0.10, 2.5),
-    (7.8, 3.0, 0.7, 0.12, 2.2),
-    (5.0, 5.2, 1.0, 0.08, 2.8),
+    (8, 7.2, 0.8, 0.10, 2.5),
+    (32, 3.0, 0.7, 0.12, 2.2),
+    (20, 5.2, 1.0, 0.08, 2.8),
 ]
 
 for cx, cy, radius, alpha_val, lw in circles:
@@ -88,14 +88,15 @@ for cx, cy, radius, alpha_val, lw in circles:
     ax.add_patch(inner_circle)
 
 # Add subtle grid overlay for structure
-for i in np.linspace(0.5, 9.5, 15):
+for i in np.linspace(2, 38, 20):
     ax.plot([i, i], [0, 10], 'white', linewidth=0.3, alpha=0.04)
-    ax.plot([0, 10], [i, i], 'white', linewidth=0.3, alpha=0.04)
+for i in np.linspace(0.5, 9.5, 10):
+    ax.plot([0, 40], [i, i], 'white', linewidth=0.3, alpha=0.04)
 
 # Add decorative corner elements
 corner_elements = [
     (0.3, 0.3, 0.5, 0.5),
-    (9.7, 9.7, -0.5, -0.5),
+    (39.7, 9.7, -0.5, -0.5),
 ]
 
 for cx, cy, dx, dy in corner_elements:
@@ -106,8 +107,8 @@ for cx, cy, dx, dy in corner_elements:
 
 # Add subtle particle effects
 np.random.seed(123)
-n_particles = 80
-px = np.random.uniform(0, 10, n_particles)
+n_particles = 150
+px = np.random.uniform(0, 40, n_particles)
 py = np.random.uniform(0, 10, n_particles)
 sizes = np.random.uniform(1, 4, n_particles)
 alphas = np.random.uniform(0.05, 0.15, n_particles)
@@ -117,10 +118,10 @@ for i in range(n_particles):
            alpha=alphas[i])
 
 # Clean up
-ax.set_xlim(0, 10)
+ax.set_xlim(0, 40)
 ax.set_ylim(0, 10)
 ax.axis('off')
-ax.set_aspect('equal')
+ax.set_aspect('auto')
 
 # Save high-quality outputs
 plt.tight_layout(pad=0)
