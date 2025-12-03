@@ -3,16 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daiane I. Dolci </title>
+    <meta name="description" content="Computational mathematics and scientific computing portfolio for Daiane I. Dolci.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ig-dolci.github.io/igdolci/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Daiane I. Dolci | Computational Mathematics & Scientific Computing">
+    <meta property="og:description" content="Research associate at Imperial College London working on Firedrake, Pyadjoint, and high-fidelity numerical methods.">
+    <meta property="og:url" content="https://ig-dolci.github.io/igdolci/">
+    <meta property="og:image" content="https://ig-dolci.github.io/igdolci/hero-background.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Daiane I. Dolci | Computational Mathematics">
+    <meta name="twitter:description" content="Computational mathematician focusing on adjoint optimisation, wave physics, and high-order numerics.">
+    <meta name="twitter:image" content="https://ig-dolci.github.io/igdolci/hero-background.jpg">
+    <title>Daiane I. Dolci</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Daiane I. Dolci",
+        "jobTitle": "Research Associate",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Imperial College London"
+        },
+        "description": "Computational mathematics researcher focusing on Firedrake, Pyadjoint, and PDE-constrained optimisation.",
+        "url": "https://ig-dolci.github.io/igdolci/",
+        "image": "https://ig-dolci.github.io/igdolci/1692516859256.jpeg",
+        "email": "mailto:daia.dolci@gmail.com",
+        "sameAs": [
+            "https://profiles.imperial.ac.uk/d.dolci",
+            "https://www.linkedin.com/in/id-dolci",
+            "https://github.com/ig-dolci"
+        ],
+        "alumniOf": "University of São Paulo"
+    }
+    </script>
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
     <header>
-        <nav>
+        <nav aria-label="Primary">
             <div class="container">
-                <h1 class="logo">Daiane I. Dolci</h1>
-                <ul class="nav-links">
+                <p class="logo"><a href="index.html">Daiane I. Dolci</a></p>
+                <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul id="primary-navigation" class="nav-links">
                     <li><a href="#about">About</a></li>
+                    <li><a href="#research">Research</a></li>
                     <li><a href="#publications">Publications</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#notebooks">Notebooks</a></li>
@@ -21,53 +65,109 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main">
         <!-- Hero Section -->
         <section class="hero">
             <div class="container">
-                <h2>Welcome</h2>
-                <p class="subtitle"> Computational Mathematics | Researcher</p>
-                <p>Specialising in numerical methods, adjoint-based optimisation, and scientific computing</p>
-                <div class="hero-contact-icons">
-                    <a href="mailto:daia.dolci@gmail.com" title="Email: daia.dolci@gmail.com">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                    </a>
-                    <a href="https://profiles.imperial.ac.uk/d.dolci" target="_blank" title="Imperial College London Profile">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/id-dolci" target="_blank" title="LinkedIn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                    </a>
-                    <a href="https://github.com/ig-dolci" target="_blank" title="GitHub">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                    </a>
+                <div class="hero-grid">
+                    <div class="hero-content">
+                    <h1>Computational Mathematics & Scientific Computing Researcher</h1>
+                    <p class="hero-description">
+                        Specialising in numerical methods, adjoint-based optimisation, and scientific computing to solve
+                        inverse problems and high-fidelity simulations across geophysics and fluid dynamics.
+                    </p>
+                    <ul class="hero-expertise">
+                        <li>Adjoint optimisation</li>
+                        <li>Finite element modelling</li>
+                        <li>Wave propagation</li>
+                        <li>Open-source stewardship</li>
+                    </ul>
+                    <div class="hero-actions">
+                        <a href="#publications" class="btn btn-accent">Explore publications</a>
+                        <a href="mailto:daia.dolci@gmail.com" class="btn btn-ghost">Start a collaboration</a>
+                    </div>
+                    <div class="hero-contact-icons">
+                        <a href="mailto:daia.dolci@gmail.com" title="Email: daia.dolci@gmail.com" aria-label="Email Daiane Dolci">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </a>
+                        <a href="https://profiles.imperial.ac.uk/d.dolci" target="_blank" rel="noreferrer noopener" title="Imperial College London Profile" aria-label="View Daiane Dolci Imperial College profile">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/id-dolci" target="_blank" rel="noreferrer noopener" title="LinkedIn" aria-label="Visit Daiane Dolci on LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="https://github.com/ig-dolci" target="_blank" rel="noreferrer noopener" title="GitHub" aria-label="View Daiane Dolci on GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                    </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- About Section -->
-        <section id="about" class="section">
-            <div class="container">
+        <section id="about" class="section about-section">
+            <div class="container about-shell">
                 <h2>About Me</h2>
-                
-                <p>
-                    I am a Research Associate at <strong>Imperial College London</strong>, working on the 
-                    <a href="https://www.firedrakeproject.org/" target="_blank">Firedrake project</a>. 
-                    I hold a PhD in Science from the University of São Paulo, Brazil.
-                </p>
-                <p>
-                    My work involves developing and applying differentiation algorithms with 
-                    <a href="https://www.dolfin-adjoint.org/en/latest/documentation/pyadjoint_docs.html" target="_blank">Pyadjoint</a>
-                    and <a href="https://www.firedrakeproject.org/" target="_blank">Firedrake</a> across the field of 
-                    continuum mechanics to simulate a wide range of physical phenomena. My expertise lies in computational 
-                    mathematics applied to computational fluid dynamics, inverse problems, and optimisation.
-                </p>
-                <p>
-                    I am proficient in Python programming and have contributed to several open-source software projects 
-                    including PETSc4py, Firedrake, FEniCS Project, and Pyadjoint. My research focuses on developing 
-                    numerical methods for wave propagation, full waveform inversion, and fluid dynamics problems, 
-                    leveraging high-order finite element methods and automatic differentiation for gradient-based optimisation.
-                </p>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <div class="about-photo">
+                            <img src="1692516859256.jpeg" alt="Portrait of Daiane I. Dolci">
+                        </div>
+                        <p>
+                            I am a Research Associate at <strong>Imperial College London</strong>, working on the 
+                            <a href="https://www.firedrakeproject.org/" target="_blank" rel="noreferrer noopener">Firedrake project</a>. 
+                            I hold a PhD in Science from the University of São Paulo, Brazil.
+                        </p>
+                        <p>
+                            My work involves developing and applying differentiation algorithms with 
+                            <a href="https://www.dolfin-adjoint.org/en/latest/documentation/pyadjoint_docs.html" target="_blank" rel="noreferrer noopener">Pyadjoint</a>
+                            and <a href="https://www.firedrakeproject.org/" target="_blank" rel="noreferrer noopener">Firedrake</a> across the field of 
+                            continuum mechanics to simulate a wide range of physical phenomena. My expertise lies in computational 
+                            mathematics applied to computational fluid dynamics, inverse problems, and optimisation.
+                        </p>
+                        <p>
+                            I am proficient in Python programming and have contributed to several open-source software projects 
+                            including PETSc4py, Firedrake, FEniCS Project, and Pyadjoint. My research focuses on developing 
+                            numerical methods for wave propagation, full waveform inversion, and fluid dynamics problems, 
+                            leveraging high-order finite element methods and automatic differentiation for gradient-based optimisation.
+                        </p>
+                    </div>
+                    <div class="about-panel">
+                        <div class="contact-box">
+                            <h3>Let’s connect</h3>
+                            <ul class="contact-list">
+                                <li><strong>Email:</strong> <a href="mailto:daia.dolci@gmail.com">daia.dolci@gmail.com</a></li>
+                                <li><strong>Imperial:</strong> <a href="https://profiles.imperial.ac.uk/d.dolci" target="_blank" rel="noreferrer noopener">profiles.imperial.ac.uk/d.dolci</a></li>
+                                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/id-dolci" target="_blank" rel="noreferrer noopener">linkedin.com/in/id-dolci</a></li>
+                                <li><strong>GitHub:</strong> <a href="https://github.com/ig-dolci" target="_blank" rel="noreferrer noopener">github.com/ig-dolci</a></li>
+                            </ul>
+                        </div>
+                        <div class="focus-card">
+                            <h3>Current focus</h3>
+                            <ul class="focus-list">
+                                <li>
+                                    <span class="focus-title">Automatic differentiation</span>
+                                    <span class="focus-meta">gradient fidelity for PDE-constrained problems</span>
+                                </li>
+                                <li>
+                                    <span class="focus-title">Wave physics</span>
+                                    <span class="focus-meta">full waveform inversion & uncertainty quantification</span>
+                                </li>
+                                <li>
+                                    <span class="focus-title">High-order numerics</span>
+                                    <span class="focus-meta">robust finite element solvers for complex geometries</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            <div class="about-quote">
+                <div class="quote-card">
+                    <p>“Nothing in life is to be feared, it is only to be understood.”</p>
+                    <span>— Marie Skłodowska Curie</span>
+                </div>
+            </div>
             </div>
         </section>
 
@@ -107,49 +207,49 @@
                     <h3>An adjoint-based methodology for sensitivity analysis of time-periodic flows with reduced time integration</h3>
                     <p class="authors">Tomás Sambiase Privato, João de Sá Brasil Lima, Daiane Iglesia Dolci, Bruno Souza Carmo, Marcelo Tanaka Hayashi, Ernani Vitillo Volpe</p>
                     <p class="journal">International Journal for Numerical Methods in Engineering, 2025</p>
-                    <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.7663" target="_blank" class="btn">Read More</a>
+                    <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.7663" target="_blank" rel="noreferrer noopener" class="btn btn-primary">Read More</a>
                 </div>
 
                 <div class="publication">
                     <h3>Velocity model-based adapted meshes using optimal transport</h3>
                     <p class="authors">Thiago Dias dos Santos, Alexandre Olender, Daiane Iglesia Dolci, Bruno Souza Carmo</p>
                     <p class="journal">Geophysics, 2024</p>
-                    <a href="https://library.seg.org/doi/abs/10.1190/geo2023-0581.1" target="_blank" class="btn">Read More</a>
+                    <a href="https://library.seg.org/doi/abs/10.1190/geo2023-0581.1" target="_blank" rel="noreferrer noopener" class="btn btn-primary">Read More</a>
                 </div>
 
                 <div class="publication">
                     <h3>checkpoint_schedules: schedules for incremental checkpointing of adjoint simulations</h3>
                     <p class="authors">Daiane I. Dolci, James R. Maddison, David A. Ham, Guillaume Pallez, Julien Herrmann</p>
                     <p class="journal">The Journal of Open Source Software, 2024</p>
-                    <a href="https://joss.theoj.org/papers/10.21105/joss.06148" target="_blank" class="btn">Read More</a>
+                    <a href="https://joss.theoj.org/papers/10.21105/joss.06148" target="_blank" rel="noreferrer noopener" class="btn btn-primary">Read More</a>
                 </div>
 
                 <div class="publication">
                     <h3>Effectiveness and computational efficiency of absorbing boundary conditions for full-waveform inversion</h3>
                     <p class="authors">Daiane Iglesia Dolci, Felipe A.G. Silva, Pedro S. Peixoto, Ernani V. Volpe</p>
                     <p class="journal">Geoscientific Model Development Discussions, 2022</p>
-                    <a href="https://doi.org/10.5194/gmd-2022-48" target="_blank" class="btn">Read More</a>
+                    <a href="https://doi.org/10.5194/gmd-2022-48" target="_blank" rel="noreferrer noopener" class="btn btn-primary">Read More</a>
                 </div>
 
                 <div class="publication">
                     <h3>Sensitivity of the least stable modes to passive control for a flow around an elastically mounted circular cylinder</h3>
                     <p class="authors">Daiane Iglesia Dolci, Bruno Souza Carmo</p>
                     <p class="journal">Physical Review Fluids, 2022</p>
-                    <a href="https://doi.org/10.1103/PhysRevFluids.7.083901" target="_blank" class="btn">Read More</a>
+                    <a href="https://doi.org/10.1103/PhysRevFluids.7.083901" target="_blank" rel="noreferrer noopener" class="btn btn-primary">Read More</a>
                 </div>
 
                 <div class="publication">
                     <h3>Adjoint sensitivity analysis of steady laminar flows with respect to nongeometrical parameters</h3>
                     <p class="authors">Daiane I. Dolci, João de Sá Brasil Lima, Tomas S. Privato, Bruno S. Carmo, Ernani V. Volpe</p>
                     <p class="journal">International Journal for Numerical Methods in Engineering, 2021</p>
-                    <a href="https://doi.org/10.1002/nme.6601" target="_blank" class="btn">Read More</a>
+                    <a href="https://doi.org/10.1002/nme.6601" target="_blank" rel="noreferrer noopener" class="btn btn-primary">Read More</a>
                 </div>
 
                 <div class="publication">
                     <h3>Bifurcation analysis of the primary instability in the flow around a flexibly mounted circular cylinder</h3>
                     <p class="authors">Daiane I. Dolci and Bruno S. Carmo</p>
                     <p class="journal">Journal of Fluid Mechanics, 2019</p>
-                    <a href="https://doi.org/10.1017/jfm.2019.754" target="_blank" class="btn">Read More</a>
+                    <a href="https://doi.org/10.1017/jfm.2019.754" target="_blank" rel="noreferrer noopener" class="btn btn-primary">Read More</a>
                 </div>
 
                 <h3 class="pub-section-title">Conference Papers</h3>
@@ -158,21 +258,21 @@
                     <h3>FWI Performance Improvement with the Use of Wavelet Transforms</h3>
                     <p class="authors">S. Malvar, D.I. Dolci, B.S. Carmo</p>
                     <p class="journal">Digital Subsurface Conference in Latin America, 2021</p>
-                    <a href="https://doi.org/10.3997/2214-4609.202181004" target="_blank" class="btn">Read More</a>
+                    <a href="https://doi.org/10.3997/2214-4609.202181004" target="_blank" rel="noreferrer noopener" class="btn btn-primary">Read More</a>
                 </div>
 
                 <div class="publication">
                     <h3>An Approach for Optimizing the Performance of an FWI Application on HPC Clusters</h3>
                     <p class="authors">J.F.D. Souza, F.A.G. Da Silva, D.I. Dolci, L.R. Manrique, E.S. Gomi, H. Senger</p>
                     <p class="journal">Digital Subsurface Conference in Latin America, 2021</p>
-                    <a href="https://doi.org/10.3997/2214-4609.202181010" target="_blank" class="btn">Read More</a>
+                    <a href="https://doi.org/10.3997/2214-4609.202181010" target="_blank" rel="noreferrer noopener" class="btn btn-primary">Read More</a>
                 </div>
 
                 <div class="publication">
                     <h3>Numerical predictions of viscoelastic flows with an algebraic extra-stress model</h3>
                     <p class="authors">Daiane I. Dolci, Gilcilene S. Paulo, Gilmar Mompean</p>
                     <p class="journal">WCCM-ECCM-ECFD 2014</p>
-                    <a href="https://congress.cimne.com/iacm-eccomas2014/admin/files/filePaper/p4330.pdf" target="_blank" class="btn">Read More</a>
+                    <a href="https://congress.cimne.com/iacm-eccomas2014/admin/files/filePaper/p4330.pdf" target="_blank" rel="noreferrer noopener" class="btn btn-primary">Read More</a>
                 </div>
             </div>
         </section>
@@ -181,7 +281,7 @@
         <section id="projects" class="section">
             <div class="container">
                 <h2>Projects</h2>
-                <div class="construction">
+                <div class="construction" role="status" aria-live="polite">
                     <p>🚧 Under Construction 🚧</p>
                     <p>This section is currently being developed. Check back soon!</p>
                 </div>
@@ -194,7 +294,7 @@
                 <h2>Notebooks</h2>
                 <p class="section-intro">Interactive Jupyter notebooks demonstrating computational methods and numerical techniques.</p>
                 
-                <div class="construction">
+                <div class="construction" role="status" aria-live="polite">
                     <p>🚧 Coming Soon 🚧</p>
                     <p>Notebooks will be available here shortly, covering topics such as:</p>
                     <ul class="notebook-topics">
@@ -214,5 +314,34 @@
             <p>&copy; 2025 Daiane I. Dolci. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.getElementById('primary-navigation');
+
+        if (navToggle && navLinks) {
+            const navAnchors = navLinks.querySelectorAll('a');
+
+            const closeNav = () => {
+                document.body.classList.remove('nav-open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            };
+
+            navToggle.addEventListener('click', () => {
+                const isOpen = document.body.classList.toggle('nav-open');
+                navToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            navAnchors.forEach(anchor => {
+                anchor.addEventListener('click', closeNav);
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
+                    closeNav();
+                }
+            });
+        }
+    </script>
 </body>
 </html>
