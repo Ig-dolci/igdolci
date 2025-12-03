@@ -12,7 +12,7 @@ from matplotlib.patches import Circle
 from matplotlib.tri import Triangulation
 
 # Set dimensions for extra-wide display (3:1 aspect ratio)
-fig = plt.figure(figsize=(36, 12), dpi=200)
+fig = plt.figure(figsize=(30, 10), dpi=200)
 ax = plt.gca()
 
 # Create sophisticated multi-layer gradient background
