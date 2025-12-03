@@ -58,10 +58,10 @@ for bounds, n_pts in mesh_regions:
 
 # Add elegant mathematical annotations with better positioning
 equations = [
-    (r'$\nabla \cdot \mathbf{u} = 0$', (3, 8.5), 16),
-    (r'$\nabla^2 p = -\omega^2 c^{-2} p$', (33, 1.5), 14),
-    (r'$\min_{\mathbf{m}} \, J(\mathbf{m})$', (35, 8.5), 16),
-    (r'$\mathbf{g} = \nabla_{\mathbf{m}} J$', (4, 1.8), 14),
+    (r'$\nabla \cdot \mathbf{u} = 0$', (3, 8.5), 40),
+    (r'$\nabla^2 p = -\omega^2 c^{-2} p$', (33, 1.5), 36),
+    (r'$\min_{\mathbf{m}} \, J(\mathbf{m})$', (35, 8.5), 40),
+    (r'$\mathbf{g} = \nabla_{\mathbf{m}} J$', (4, 1.8), 36),
 ]
 
 for eq, (x_pos, y_pos), fsize in equations:
